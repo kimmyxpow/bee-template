@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--? CSS Kita -->
+   <!--! Selalu simpan customize.css di atas app.css -->
+   <link rel="stylesheet" href="./dist/css/customize.css">
+   <link rel="stylesheet" href="./dist/css/app.css">
+
+   <!--? Font dari Google Fonts [https://fonts.google.com/] -->
+   <!--? Font kalam dan font montserrat -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+   <title>My Portfolio</title>
+</head>
+
+<body>
+   <div id="container">
+      <nav class="nav">
+         <div class="container flex-center">
+            <a class="nav__brand" href="#">Logo</a>
+            <div class="nav__menu">
+               <button class="nav__btn-menu">
+                  <ion-icon name="menu-outline" class="nav__menu-icon"></ion-icon>
+               </button>
+               <div class="nav__links">
+                  <a href="#about" class="flex-center nav__link">
+                     <span class="nav__link-text" href="#">About</span>
+                     <ion-icon name="chevron-forward-outline" class="nav__link-icon"></ion-icon>
+                  </a>
+                  <a href="#work" class="flex-center nav__link">
+                     <span class="nav__link-text" href="#">Works</span>
+                     <ion-icon name="chevron-forward-outline" class="nav__link-icon"></ion-icon>
+                  </a>
+                  <a class="btn btn-sm btn-primary" href="#contact">Contact</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <section class="container about" id="about">
+         <img class="about__img" src="https://images.unsplash.com/photo-1503414265207-455bcd0955dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="Abi Noval Fauzi">
+         <main class="desc">
+            <div>
+               <h1 class="heading">Hi! I'm Abi Noval Fauzi</h1>
+               <p class="heading-2">I'm a front-end developer.</p>
+            </div>
+            <p class="text">
+               I am a vocational high school student studying to be a frontend developer and UI/UX design. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut est illo tenetur fugiat, consequatur pariatur saepe?
+            </p>
+            <a class="link" href="#work"><span>See my work</span> <ion-icon name="chevron-down-outline" class="link-icon"></ion-icon></a>
+         </main>
+      </section>
+
+      <section class="container" id="work">
+         <section class="project">
+            <main class="desc project__desc-left">
+               <div>
+                  <h1 class="heading">BeeCode</h1>
+                  <p class="heading-2">Website Belajar Pemrograman</p>
+               </div>
+               <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iure nostrum cum totam, architecto ipsam ad nesciunt temporibus dignissimos omnis eaque aliquam eius at maiores quasi consequuntur! Dicta, debitis animi.
+               </p>
+               <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iure nostrum cum totam, architecto ipsam ad nesciunt temporibus dignissimos omnis eaque aliquam eius at maiores quasi consequuntur! Dicta, debitis animi.
+               </p>
+               <a class="link" href="#"><span>Lihat live</span> <ion-icon name="chevron-forward-outline" class="link-icon"></ion-icon></a>
+            </main>
+            <img class="project__img project__right" src="./asset/img/BeeCode.png" alt="BeeCode">
+         </section>
+
+         <section class="project">
+            <main class="desc project__desc-right">
+               <div>
+                  <h1 class="heading">My Code</h1>
+                  <p class="heading-2">Code Snippet</p>
+               </div>
+               <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iure nostrum cum totam, architecto ipsam ad nesciunt temporibus dignissimos omnis eaque aliquam eius at maiores quasi consequuntur! Dicta, debitis animi.
+               </p>
+               <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iure nostrum cum totam, architecto ipsam ad nesciunt temporibus dignissimos omnis eaque aliquam eius at maiores quasi consequuntur! Dicta, debitis animi.
+               </p>
+               <a class="link" href="#"><span>Lihat live</span> <ion-icon name="chevron-forward-outline" class="link-icon"></ion-icon></a>
+            </main>
+            <img class="project__img project__left" src="./asset/img/My Code.png" alt="My Code">
+         </section>
+      </section>
+
+      <section class="container contact" id="contact">
+         <div class="heading-center">
+            <h1 class="heading">Interested in me?</h1>
+            <p class="heading-2">I will receive your message.</p>
+         </div>
+         <form class="contact__form" method="" action="">
+            <div class="form__group">
+               <div class="input__wrapper">
+                  <label class="input__label" for="name">Name</label>
+                  <div class="input__field">
+                     <ion-icon name="person-outline"></ion-icon>
+                     <input class="input" autocomplete="off" type="text" name="name" id="name">
+                  </div>
+               </div>
+               <div class="input__wrapper">
+                  <label class="input__label" for="email">Email</label>
+                  <div class="input__field">
+                     <ion-icon name="mail-outline"></ion-icon>
+                     <input class="input" autocomplete="off" type="email" name="email" id="email">
+                  </div>
+               </div>
+            </div>
+            <div class="input__wrapper">
+               <label class="input__label" for="message">Message</label>
+               <div class="input__field">
+                  <textarea class="input textarea" name="messsage" id="message"></textarea>
+               </div>
+            </div>
+            <button class="btn btn-regular btn-primary">Send</button>
+         </form>
+      </section>
+
+      <footer class="container footer">
+         <p class="footer__text">Made with love by Abi Noval Fauzi (You can change this sentence)</p>
+      </footer>
+   </div>
+
+   <!--? Import icon dari ionicons [https://ionic.io/ionicons] -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
