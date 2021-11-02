@@ -69,3 +69,15 @@
    /*? Warna nav link ketika di hover */
    --clr-nav-link-hover: var(--clr-primary);
 }
+
+/*? Variable yang berhubungan dengan section about */
+:root {
+   /*? Border radius dari gambar di section about */
+   --radius-img-about: 1.5rem;
+}
+
+/*? Variable yang berhubungan dengan section project */
+:root {
+   /*? Border radius dari gambar di section project */
+   --radius-img-project: .75rem;
+}

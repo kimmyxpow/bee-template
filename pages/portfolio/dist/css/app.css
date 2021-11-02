@@ -562,7 +562,11 @@ html {
 
 .about__img {
    width: 100%;
-   border-radius: 1.5rem
+   border-radius: var(--radius-img-about);
+   -webkit-border-radius: var(--radius-img-about);
+   -moz-border-radius: var(--radius-img-about);
+   -ms-border-radius: var(--radius-img-about);
+   -o-border-radius: var(--radius-img-about);
 }
 
 @media (min-width:768px) {
@@ -712,13 +716,17 @@ html {
 .project__img {
    max-height: 40rem;
    width: 100%;
-   border-radius: .75rem;
+   border-radius: var(--radius-img-project);
    -o-object-fit: cover;
    object-fit: cover;
    -o-object-position: top;
    object-position: top;
    --tw-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
-   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+   -webkit-border-radius: var(--radius-img-project);
+   -moz-border-radius: var(--radius-img-project);
+   -ms-border-radius: var(--radius-img-project);
+   -o-border-radius: var(--radius-img-project);
 }
 
 @media (min-width:768px) {
