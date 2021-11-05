@@ -1,0 +1,19 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss build -o ./dist/css/app.css",
+    "build": "tailwindcss build -o ./dist/css/app.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
